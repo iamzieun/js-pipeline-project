@@ -18,7 +18,6 @@ pipeline {
 			}
 		}
 		stage("Build") {
-			withEnv(["PATH=$PATH:~/.local/bin"])
 			steps {
 				sh 'docker-compose build web'
 			}
